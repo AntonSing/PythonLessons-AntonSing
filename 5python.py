@@ -17,7 +17,7 @@ elif tang(y1, y2) < tang(x1, x2) < tang(z1, z2):
 else:
    print(f'Z({z1, z2}')
 
-#Task 2
+# Task 2
 
 n = int(input('Введите чило: '))
 lst = [True for _ in range(n+1)]
