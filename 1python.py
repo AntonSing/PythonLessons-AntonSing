@@ -13,8 +13,7 @@ print('Замена:', x, y)
 
 #Task 3
 import math
+length = int(input("Введите длину маятника: "))
 g = 9.81
-l = int(input('Введите длину маятника в метрах: '))
-b = l/g
-T = (2*math.pi*math.sqrt(b))
-print(round(T, 2))
+period = 2 * math.pi * math.sqrt(length / g)
+print(round(period, 2))
