@@ -1,10 +1,8 @@
 #Task 1
 import math
-r = int(input("Введите радиус:"))
-a = (2*math.pi*r)
-b = (math.pi*r**2)
-print('Длина окружности: ', round (a, 2))
-print('Площадь круга: ', round(b, 2))
+radius = int(input("Введите радиус:"))
+print("Длина окружности: ", round(2 * math.pi * radius, 2))
+print("Площадь круга: ", round(math.pi * radius ** 2, 2))
 
 #Task 2
 x, y = 10, 55
