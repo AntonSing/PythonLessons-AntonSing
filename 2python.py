@@ -1,10 +1,11 @@
 #Task 1
-a = int(input('Введите делимое:'))
-b = int(input('Введите делитель: '))
-if b!=0:
-    print(a/b)
+num_1 = int(input("Введите делимое: "))
+num_2 = int(input("Введите делитель: "))
+if num_2 != 0:
+    num_3 = num_1 / num_2
+    print(num_3)
 else:
-    print('Ноль в делителе')
+    print("На ноль делить нельзя")
 
 #Task 2
 a = int(input('Введите сумму покупки: '))
