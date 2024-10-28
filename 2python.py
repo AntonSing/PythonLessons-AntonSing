@@ -8,13 +8,12 @@ else:
     print("На ноль делить нельзя")
 
 #Task 2
-a = int(input('Введите сумму покупки: '))
-if a > 20:
-    b = a*0.35
-    c = a - b
-    print('Сумма со скидкой: ', round (c, 2))
-    print('Размер скидки: ', b)
-elif 1 <= a <= 20:
+sum = int(input("Введите сумму покупки: "))
+if sum > 20:
+    sum_1 = sum * 0.35
+    print("Скидка: ", round(sum_1, 2))
+    print("Итоговая стоимость: ", round(sum - sum_1, 2))
+elif 1 <= sum <= 20:
     print('Скидки нет')
 else:
     print('Ошибка')
