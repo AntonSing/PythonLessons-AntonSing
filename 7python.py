@@ -41,7 +41,18 @@ def print_docs(directory):
             print(f"  Файлы: {', '.join(files)}")
         print("-" * 40)
 
-directory_path = "/путь/к/вашей/папке"
+directory_path = "article.txt"
 print_docs(directory_path)
 
 #Task 3
+def longest_words(file):
+    with open(file, "r", encoding="utf-8") as f:
+        text = f.read()
+    import re
+    words = re.findall(r"\b\w+\b", text)
+    max_length = max(len(word) for word in words)
+    longest = [word for word in words if len(word) == max_length]
+    return longest
+file_path = "article.txt"
+result = longest_words(file_path)
+print(result)
