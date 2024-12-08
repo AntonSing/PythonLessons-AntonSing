@@ -56,7 +56,7 @@ import matplotlib.pyplot as plt
 def f(x, alpha, beta):
     return (x**beta + alpha**beta) / (x**beta)
 x_neg = np.linspace(-5, -0.1, 500)
-f_zero = np.zeros_like(x_neg)  # Прямая f(x) = 0
+f_zero = np.zeros_like(x_neg)
 x_neg_inset = np.linspace(-5, -1, 500)
 fig, ax_main = plt.subplots(figsize=(12, 8))
 for alpha, beta in [(1, 1), (2, 1), (1, 2)]:
